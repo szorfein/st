@@ -94,6 +94,12 @@ xrdb_load(void)
 void
 reload(int sig)
 {
+  signal(SIGUSR1, reload);
+
+  if (sig == -1) {
+    return;
+  }
+
 	xrdb_load();
 
 	/* colors, fonts */
@@ -106,6 +112,4 @@ reload(int sig)
 	redraw();
 	/* triggers re-render if we're visible. */
 	ttywrite("\033[O", 3, 1);
-
-	signal(SIGUSR1, reload);
 }
