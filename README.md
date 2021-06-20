@@ -3,6 +3,7 @@ Terminal st customized (suckless)
 
 ## Patches
 + [anygeometry](https://st.suckless.org/patches/anygeometry/)
++ [boxdraw](https://st.suckless.org/patches/boxdraw/)
 + [desktopentry](https://st.suckless.org/patches/desktopentry/)
 + [font2](https://st.suckless.org/patches/font2/)
 + [ligatures](https://st.suckless.org/patches/ligatures/)
